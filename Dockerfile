@@ -1,5 +1,8 @@
 FROM node:8.11-alpine
 MAINTAINER "Mahesh" "mahesh@ilimi.in"
+RUN echo 'https://dl-3.alpinelinux.org/alpine/v3.4/main' > /etc/apk/repositories && \ 
+    echo '@testing https://dl-3.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
+    echo '@community https://dl-3.alpinelinux.org/alpine/v3.4/community'
 RUN apk update \
     && apk add unzip \
     && apk add curl \
