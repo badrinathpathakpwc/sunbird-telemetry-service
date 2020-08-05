@@ -36,7 +36,7 @@ class Dispatcher {
     }
 
     dispatch(mid, message, callback) {
-        this.logger.log('info', message, {mid: mid}, callback);
+        this.logger.log('info', 'message', '{mid: mid}', 'callback');
     }
 
     health(callback) {
