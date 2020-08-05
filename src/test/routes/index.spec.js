@@ -7,7 +7,7 @@ chai.use(chaiHttp);
 describe('route test', () => {
 
     beforeEach(() => {
-        console.log(process.env.node_env);
+     //   console.log(process.env.node_env);
         process.env.node_env = 'test'
         process.env.telemetry_local_storage_type = 'kafka';
         app = require(appPath);
